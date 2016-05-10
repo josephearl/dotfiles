@@ -12,19 +12,15 @@ To replicate this configuration on a new machine:
 
 To add a new dotfile:
 
-    dotfiles add <filename>
+    git add <filename>
 
 To commit and push changes:
 
-    dotfiles commit -m <message>
-    dotfiles push
+    git commit -m <message>
+    git push origin master
 
 ## Creating your own dotfiles
 
 To create your own dotfiles repo like this from scratch:
 
     git init --separate-git-dir=<git-repo-path> ~
-
-Then add the following to your `.bashrc` or similar:
-
-    alias dotfiles='/usr/bin/git --git-dir=<git-repo-path> --work-tree=$HOME'
