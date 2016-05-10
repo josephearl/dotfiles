@@ -4,23 +4,37 @@
 
 ## Getting started
 
-To replicate this configuration on a new machine:
+To replicate this configuration on a new machine fetch the :
 
-    git clone --separate-git-dir=$HOME/.dotfiles https://github.com/JosephEarl/dotfiles ~
+    git init --bare .dotfiles
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    dotfiles remote add origin https://github.com/JosephEarl/dotfiles
+    dotfiles fetch
+
+Remove any existing conflicting files:
+    
+    rm .bashrc
+    ...
+
+Finally checkout the master branch:
+
+    dotfiles checkout master
 
 ## Modifying dotfiles
 
 To add a new dotfile:
 
-    git add <filename>
+    dotfiles add <filename>
 
 To commit and push changes:
 
-    git commit -m <message>
-    git push origin master
+    dotfiles commit -m <message>
+    dotfiles push origin master
 
 ## Creating your own dotfiles
 
-To create your own dotfiles repo like this from scratch:
+To create your own dotfiles repo like this:
 
-    git init --separate-git-dir=<git-repo-path> ~
+    git init --bare .dotfiles
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    dotfiles config status.showUntrackedFiles no
