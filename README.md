@@ -4,10 +4,10 @@
 
 ## Getting started
 
-To replicate this configuration on a new machine fetch the :
+To replicate this configuration on a new machine initialise and fetch the repository:
 
     git init --bare .dotfiles
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
     dotfiles remote add origin https://github.com/JosephEarl/dotfiles
     dotfiles fetch
 
@@ -36,5 +36,7 @@ To commit and push changes:
 To create your own dotfiles repo like this:
 
     git init --bare .dotfiles
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
     dotfiles config status.showUntrackedFiles no
+
+You can replace `~/.dotfiles` with any other path on your system
