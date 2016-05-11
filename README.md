@@ -16,7 +16,7 @@ Remove any existing conflicting files:
     rm .bashrc
     ...
 
-Finally checkout the master branch:
+Then checkout the master branch:
 
     dotfiles checkout master
 
@@ -39,4 +39,4 @@ To create your own dotfiles repo like this:
     alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
     dotfiles config status.showUntrackedFiles no
 
-You can replace `~/.dotfiles` with any other path on your system
+You can use any other path instead of `$HOME/.dotfiles` to store the Git configuration for your dotfiles.
