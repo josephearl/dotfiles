@@ -14,4 +14,4 @@ dotfiles config status.showUntrackedFiles no
 source $HOME/.bash_completion/completion.bash
 
 # Prompt
-PS1="\[\033[1;32m\]→\[\033[0m\] \[\033[1;36m\]$(basename $(pwd))/\[\033[0m\]$(git-radar --bash --fetch) "
+export PS1="\[\033[1;32m\]→\[\033[0m\] \[\033[1;36m\]\$(basename \$(pwd))/\[\033[0m\]\$(git-radar --bash --fetch) "
