@@ -4,7 +4,6 @@ dotfiles config status.showUntrackedFiles no
 
 # Path
 export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/.git-radar
 
 # Terminal Colors
 set fish_color_normal F8F8F2 # the default color

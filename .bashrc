@@ -4,7 +4,6 @@ dotfiles config status.showUntrackedFiles no
 
 # Path
 export PATH=/usr/local/bin:$PATH
-export PATH=$PATH:$HOME/.git-radar
 
 # Terminal Colors
 export CLICOLOR=1
