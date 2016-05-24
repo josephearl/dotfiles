@@ -1,3 +1,7 @@
+# Dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+dotfiles config status.showUntrackedFiles no
+
 # Path
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:$HOME/.git-radar
@@ -5,10 +9,6 @@ export PATH=$PATH:$HOME/.git-radar
 # Terminal Colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-
-# Dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-dotfiles config status.showUntrackedFiles no
 
 # Completion
 source $HOME/.bash_completion/completion.bash
