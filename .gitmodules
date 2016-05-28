@@ -1,6 +1,0 @@
-[submodule "Workspace/letsencrypt/.git-radar"]
-	path = Workspace/letsencrypt/.git-radar
-	url = https://github.com/michaeldfallen/git-radar.git
-[submodule ".git-radar"]
-	path = .git-radar
-	url = https://github.com/michaeldfallen/git-radar.git
