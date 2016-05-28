@@ -1,7 +1,3 @@
-#
-# Completions for docker-compose
-#
-
 function __fish_docker_using_command
   set cmd (commandline -opc)
   if [ (count $cmd) -gt 1 ]

@@ -1,9 +1,10 @@
 # Dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 dotfiles config status.showUntrackedFiles no
+complete --command dotfiles --wraps git
 
 # Path
-export PATH=/usr/local/bin:$PATH
+set PATH '/usr/local/bin' '/usr/local/sbin' $PATH
 
 # Terminal Colors
 set fish_color_normal F8F8F2 # the default color
