@@ -7,6 +7,7 @@ complete --command dotfiles --wraps git
 set PATH '/usr/local/bin' '/usr/local/sbin' $PATH
 
 # Terminal Colors
+export LSCOLORS=GxFxCxDxBxegedabagaced
 set fish_color_normal F8F8F2 # the default color
 set fish_color_command F92672 # the color for commands
 set fish_color_quote E6DB74 # the color for quoted blocks of text

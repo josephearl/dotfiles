@@ -3,3 +3,11 @@
 	name = Joseph Earl
 [push]
 	default = simple
+[alias]
+	co = checkout
+	st = status
+	br = branch
+	ci = commit
+	unstage = reset HEAD --
+	discard = checkout --
+	last = log -1 HEAD
