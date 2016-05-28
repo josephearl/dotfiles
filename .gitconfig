@@ -8,6 +8,8 @@
 	st = status
 	br = branch
 	ci = commit
+	pu = pull
+	ps = push
 	ls = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate
 	ll = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --numstat
 	ld = log --pretty=format:\"%C(green bold)%h\\ %C(yellow bold)%ad%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --date=relative
