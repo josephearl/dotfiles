@@ -8,6 +8,24 @@
 	st = status
 	br = branch
 	ci = commit
+	ls = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate
+	ll = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --numstat
+	ld = log --pretty=format:\"%C(green bold)%h\\ %C(yellow bold)%ad%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --date=relative
 	unstage = reset HEAD --
 	discard = checkout --
 	last = log -1 HEAD
+[color]
+	ui = auto
+[color "branch"]
+	current = green bold reverse
+	local = normal
+	remote = white
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = green bold
+	changed = red bold
+	untracked = white
