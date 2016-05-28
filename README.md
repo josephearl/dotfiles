@@ -16,10 +16,9 @@ Remove any existing conflicting files:
     rm .bashrc
     ...
 
-Then checkout the master branch and get submodules:
+Then checkout the master branch:
 
     dotfiles checkout master
-    dotfiles submodule update --recursive
 
 ## Modifying dotfiles
 
