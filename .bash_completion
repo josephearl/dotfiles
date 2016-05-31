@@ -1,0 +1,4 @@
+# Load all completion files
+for file in $HOME/.config/bash/completions/*; do
+  source "$file" 
+done

@@ -11,7 +11,11 @@ export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Completion
-source $HOME/.bash_completion/completion.bash
+source $HOME/.bash_completion
 
 # Prompt
 export PS1="\[\033[1;32m\]→\[\033[0m\] \[\033[1;36m\]\$(basename \$(pwd))/\[\033[0m\]\$(git-radar --bash --fetch) "
+
+# Aliases
+eval "$(thefuck --alias)"
+alias hn='/usr/local/bin/hn --keep-open'

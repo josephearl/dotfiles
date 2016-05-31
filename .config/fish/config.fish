@@ -30,3 +30,4 @@ set fish_pager_color_secondary F8F8F2 # the background color of the every second
 
 # Aliases
 eval (thefuck --alias | tr '\n' ';')
+alias hn='/usr/local/bin/hn --keep-open'
