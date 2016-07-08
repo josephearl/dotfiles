@@ -10,43 +10,43 @@ end
 
 function __fish_docker_compose_file_path --description \
         'Get the next docker-compose.yml file in the folder parent path.'
-    set -l path (pwd)
-    while not test -e $path/docker-compose.yml
-        if test $path = '/'
-            return
-        end
-
-        set path (realpath $path/..)
+  set -l path (pwd)
+  while not test -e $path/docker-compose.yml
+    if test $path = '/'
+        return
     end
 
-    echo $path/docker-compose.yml
+    set path (realpath $path/..)
+  end
+
+  echo $path/docker-compose.yml
 end
 
 function __fish_docker_compose_file_version --description \
         'Get the version of a docker-compose.yml file.'
-    cat (__fish_docker_compose_file_path) \
-        | command grep '^version:\(\s*\)["\']\?[0-9]["\']\?' \
-        | command grep -o '[0-9]'
+  cat (__fish_docker_compose_file_path) \
+      | command grep '^version:\(\s*\)["\']\?[0-9]["\']\?' \
+      | command grep -o '[0-9]'
 
-    if test $status -ne 0
-        echo '1'
-    end
+  if test $status -ne 0
+    echo '1'
+  end
 end
 
 function __fish_docker_compose_all_services --description \
         'List all services in docker-compose.yml.'
-    set -l path (__fish_docker_compose_file_path)
-    set -l file_version (__fish_docker_compose_file_version)
+  set -l path (__fish_docker_compose_file_path)
+  set -l file_version (__fish_docker_compose_file_version)
 
-    switch $file_version
-        case '2'
-            # TODO: currently this only finds services that are indented with
-            # 2 spaces. Make it work with any indentation.
-            cat $path | command sed -n '/^services:/,/^\w/p' \
-                | command grep '^  \w' | command sed 's/\s\|://g'
-        case '1'
-            cat $path | command grep '^[a-zA-Z]' | command sed 's/://'
-    end
+  switch $file_version
+    case '2'
+      # TODO: currently this only finds services that are indented with
+      # 2 spaces. Make it work with any indentation.
+      cat $path | command sed -n '/^services:/,/^\w/p' \
+          | command grep '^  \w' | command sed 's/\s\|://g'
+    case '1'
+      cat $path | command grep '^[a-zA-Z]' | command sed 's/://'
+  end
 end
 
 # All docker-compose commands
@@ -76,10 +76,10 @@ complete -c docker-compose -n '__fish_use_subcommand' -xa version           --de
 
 # docker-compose commands that take services
 for subcmd in build create down kill logs port ps pull restart rm run scale \
-        start stop up
-    complete -c docker-compose -f -n "__fish_docker_using_command $subcmd" \
-        -a '(__fish_docker_compose_all_services)' \
-        --description "Docker compose service"
+      start stop up
+  complete -c docker-compose -f -n "__fish_docker_using_command $subcmd" \
+    -a '(__fish_docker_compose_all_services)' \
+    --description "Docker compose service"
 end
 
 

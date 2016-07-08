@@ -1,11 +1,3 @@
-# Dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-dotfiles config status.showUntrackedFiles no
-complete --command dotfiles --wraps git
-
-# Path
-set PATH '/usr/local/bin' '/usr/local/sbin' $PATH
-
 # Terminal Colors
 export LSCOLORS=GxFxCxDxBxegedabagaced
 set fish_color_normal F8F8F2 # the default color
@@ -28,6 +20,37 @@ set fish_pager_color_description 49483E # the color of the completion descriptio
 set fish_pager_color_progress F8F8F2 # the color of the progress bar at the bottom left corner
 set fish_pager_color_secondary F8F8F2 # the background color of the every second completion
 
-# Aliases
+# Include local bin
+set PATH '/usr/local/bin' $PATH
+set PATH '/usr/local/sbin' $PATH
+
+# Dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+complete --command dotfiles --wraps git
+dotfiles config status.showUntrackedFiles no
+dotfiles config alias.install '!bash $HOME/.osx/install.bash'
+
+# thefuck
 eval (thefuck --alias | tr '\n' ';')
+
+# hn-cli
 alias hn='/usr/local/bin/hn --keep-open'
+
+# rbenv
+set -xU RBENV_DIR "$HOME/.rbenv"
+status --is-interactive; and . (rbenv init -|psub)
+
+# pyenv
+set -xU PYENV_DIR "$HOME/.pyenv"
+status --is-interactive; and . (pyenv init -|psub)
+
+# nvm
+set -xU NVM_DIR "$HOME/.nvm"
+bass . (brew --prefix nvm)/nvm.sh --no-use
+
+# jenv
+set -xU JENV_DIR "$HOME/.jenv"
+
+# SDKMan!
+set -xU SDKMAN_DIR "$HOME/.sdkman"
+test -s "SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init

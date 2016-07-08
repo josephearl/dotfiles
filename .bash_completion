@@ -1,4 +1,9 @@
-# Load all completion files
+# Local completion files
 for file in $HOME/.config/bash/completions/*; do
-  source "$file" 
+  . "$file"
 done
+
+# Homebrew completions
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
