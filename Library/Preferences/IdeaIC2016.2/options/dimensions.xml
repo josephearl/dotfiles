@@ -1,0 +1,46 @@
+<application>
+  <component name="DimensionService">
+    <location key="#Browse_JetBrains_Plugins_.0.0.1680.1050" x="428" y="82" />
+    <location key="#Browse_Repositories.0.0.1680.1050" x="428" y="82" />
+    <location key="#Plugins.0.0.1680.1050" x="440" y="85" />
+    <location key="FileChooserDialogImpl.0.0.1680.1050" x="629" y="155" />
+    <location key="SettingsEditor.0.0.1680.1050" x="116" y="99" />
+    <location key="WELCOME_SCREEN.0.0.1680.1050" x="839" y="230" />
+    <location key="NewModule_or_Project.wizard.0.0.1680.1050" x="571" y="272" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1680.1050" x="358" y="239" />
+    <location key="#com.intellij.codeInsight.daemon.impl.quickfix.LocateLibraryDialog.0.0.1680.1050" x="657" y="421" />
+    <location key="findTextDialog.0.0.1680.1050" x="602" y="233" />
+    <location key="replaceTextDialog.0.0.1680.1050" x="602" y="218" />
+    <location key="ReplaceDuplicatesPrompt.0.0.1680.1050" x="289" y="430" />
+    <location key="new project wizard.0.0.1680.1050" x="597" y="68" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1680.1050" x="743" y="226" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1680.1050" x="974" y="23" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1680.1050" x="676" y="258" />
+    <location key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog.0.0.1680.1050" x="676" y="266" />
+    <location key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog.0.0.1680.1050" x="641" y="442" />
+    <location key="#com.intellij.refactoring.move.moveInner.MoveInnerDialog.0.0.1680.1050" x="592" y="363" />
+    <location key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog.0.0.1680.1050" x="574" y="271" />
+    <location key="chooseDestDirectoryDialog.0.0.1680.1050" x="618" y="302" />
+    <location key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes.0.0.1680.1050" x="593" y="382" />
+    <location key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1680.1050" x="574" y="294" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1680.1050" x="427" y="341" />
+    <location key="refactoring.ChangeSignatureDialog.0.0.1680.1050" x="602" y="148" />
+    <location key="#uk.co.josephearl.toxicity_in_toxicity_test.0.0.1680.1050" x="467" y="162" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1680.1050" x="304" y="198" />
+    <location key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog.0.0.1680.1050" x="587" y="358" />
+    <size key="SettingsEditor.0.0.1680.1050" width="1549" height="850" />
+    <size key="NewModule_or_Project.wizard.0.0.1680.1050" width="977" height="646" />
+    <size key="GridCell.Tab.0.left.0.0.1680.1050" width="1680" height="306" />
+    <size key="GridCell.Tab.0.center.0.0.1680.1050" width="1680" height="306" />
+    <size key="GridCell.Tab.0.right.0.0.1680.1050" width="1680" height="306" />
+    <size key="GridCell.Tab.0.bottom.0.0.1680.1050" width="1680" height="306" />
+    <size key="GridCell.Tab.0.left.0.0.1280.800" width="1280" height="179" />
+    <size key="GridCell.Tab.0.center.0.0.1280.800" width="1280" height="179" />
+    <size key="GridCell.Tab.0.right.0.0.1280.800" width="1280" height="179" />
+    <size key="GridCell.Tab.0.bottom.0.0.1280.800" width="1280" height="179" />
+    <size key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1680.1050" width="594" height="1023" />
+    <size key="javadoc.popup.0.0.1680.1050" width="600" height="424" />
+    <size key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes.0.0.1680.1050" width="838" height="267" />
+    <size key="findTextDialog.0.0.1680.1050" width="496" height="582" />
+  </component>
+</application>

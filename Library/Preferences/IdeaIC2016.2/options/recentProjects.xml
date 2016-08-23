@@ -1,0 +1,67 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/Workspace/toxicity" />
+        <option value="$USER_HOME$/Workspace/sbt-verify" />
+        <option value="$USER_HOME$/Workspace/sbt-findbugs" />
+        <option value="$USER_HOME$/Workspace/trains" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/Workspace/toxicity" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/Workspace/toxicity" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/Workspace/sbt-findbugs">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-145.597" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1469049958550" />
+              <option name="buildTimestamp" value="1459206000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/sbt-verify">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-145.597" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1469060156718" />
+              <option name="buildTimestamp" value="1459206000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/toxicity">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-162.1121.32" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1470090635280" />
+              <option name="buildTimestamp" value="1468015200000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Workspace/trains">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-145.597" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1461380500290" />
+              <option name="buildTimestamp" value="1459206000000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/Workspace" />
+  </component>
+</application>

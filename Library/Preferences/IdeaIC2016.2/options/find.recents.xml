@@ -1,0 +1,54 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>toxicity</find>
+      <find>metrics</find>
+      <find>Objects</find>
+      <find>thresholdMe</find>
+      <find>total</find>
+      <find>copy</find>
+      <find>lineS</find>
+      <find>scores</find>
+      <find>name</find>
+      <find>score</find>
+      <find>colors</find>
+      <find>shuffle</find>
+      <find>close</find>
+      <find>java.lang.</find>
+      <find>check</find>
+      <find>checkstyle</find>
+      <find>chart-wrapper</find>
+      <find>chart</find>
+      <find>map</find>
+      <find>DocumentBuilderFactory</find>
+      <find>toxicities</find>
+      <find>$el</find>
+      <find />
+      <find>CHEIGHT</find>
+      <find>console</find>
+      <find>getRe</find>
+      <find>csv</find>
+      <find>convention</find>
+      <find>path</find>
+      <find>rtab</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>sbt-verify</replace>
+      <replace>sbt-findbugs</replace>
+      <replace>uk.co.josephearl</replace>
+      <replace>MetricToxicity</replace>
+      <replace>Threshold</replace>
+      <replace>Metric</replace>
+      <replace>T</replace>
+      <replace>Toxicity</replace>
+      <replace>threshold</replace>
+      <replace>String</replace>
+      <replace>$1</replace>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$USER_HOME$/Workspace/sbt-findbugs</dir>
+      <dir>$USER_HOME$/Workspace/toxicity/gradle-toxicity</dir>
+    </dirStrings>
+  </component>
+</application>
