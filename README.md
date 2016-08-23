@@ -142,9 +142,14 @@ To commit and push changes:
     dotfiles commit -m <message>
     dotfiles push origin master
 
-### Updating Atom packages
+### Backing up Atom packages
 
-    apm list --installed --bare > packages.list
+    apm list --installed --bare > .atom/packages.list
+
+### Backing up Homebrew packages and casks
+
+    brew leaves
+    brew cask list
 
 ## Creating your own dotfiles
 
