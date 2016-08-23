@@ -142,6 +142,10 @@ To commit and push changes:
     dotfiles commit -m <message>
     dotfiles push origin master
 
+### Updating Atom packages
+
+    apm list --installed --bare > packages.list
+
 ## Creating your own dotfiles
 
 To create your own dotfiles repo like this:
