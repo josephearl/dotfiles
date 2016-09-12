@@ -2,46 +2,50 @@
   <component name="StatisticsApplicationUsages">
     <group name="module type">
       <project id="trains" values="JAVA_MODULE,SBT_MODULE" collectionTime="1461514264111" />
-      <project id="sbt-verify" values="JAVA_MODULE,SBT_MODULE" collectionTime="1469210616577" />
-      <project id="toxicity" values="JAVA_MODULE" collectionTime="1469387335767" />
-      <project id="toxicity-parent" values="JAVA_MODULE" collectionTime="1471853699130" />
+      <project id="sbt-verify" values="SBT_MODULE,JAVA_MODULE" collectionTime="1469210616577" />
       <project id="sbt-findbugs" values="JAVA_MODULE,SBT_MODULE" collectionTime="1469051021916" />
+      <project id="toxicity-parent" values="JAVA_MODULE" collectionTime="1473327638180" />
+      <project id="toxicity" values="JAVA_MODULE" collectionTime="1469387335767" />
     </group>
     <group name="vcs">
+      <project id="toxicity-parent" values="Git" collectionTime="1473327638178" />
       <project id="sbt-verify" values="Git" collectionTime="1469210616576" />
       <project id="trains" values="Git" collectionTime="1461514264109" />
       <project id="sbt-findbugs" values="Git" collectionTime="1469051021916" />
     </group>
+    <group name="VCS Log 2">
+      <project id="toxicity-parent" values="data.commit.count.1+,data.git.root.count.1" collectionTime="1473327638419" />
+    </group>
     <group name="Scala">
       <project id="sbt-verify" values="Scala  2.10.4" collectionTime="1469210616856" />
-      <project id="trains" values="Scala  2.11.8,Library  JUnit for Scala" collectionTime="1461514264597" />
-      <project id="sbt-findbugs" values="Library  JUnit for Scala,Library  ScalaTest,Scala  2.10.4" collectionTime="1469051022018" />
+      <project id="trains" values="Library  JUnit for Scala,Scala  2.11.8" collectionTime="1461514264597" />
+      <project id="sbt-findbugs" values="Library  ScalaTest,Scala  2.10.4,Library  JUnit for Scala" collectionTime="1469051022018" />
     </group>
     <group name="run-configuration-type-temp">
       <project id="trains" values="JUnit" collectionTime="1461514264112" />
-      <project id="toxicity" values="JUnit" collectionTime="1469387335767" />
-      <project id="toxicity-parent" values="JUnit" collectionTime="1471853699131" />
       <project id="sbt-findbugs" values="JUnit" collectionTime="1469051021916" />
+      <project id="toxicity-parent" values="JUnit" collectionTime="1473327638183" />
+      <project id="toxicity" values="JUnit" collectionTime="1469387335767" />
     </group>
     <group name="file-type">
-      <project id="trains" values="PLAIN_TEXT,Git file,SBT,JAVA,Markdown,Properties" collectionTime="1461514264363" />
-      <project id="sbt-verify" values="Markdown,Properties,UNKNOWN,XML,HTML,Scala,CSS,ARCHIVE,YAML,JavaScript,Images,PLAIN_TEXT,Git file,JAVA,CLASS,SBT" collectionTime="1469210616691" />
-      <project id="toxicity" values="PLAIN_TEXT,Markdown,JAVA,ARCHIVE,Groovy,Properties,XML" collectionTime="1469387335852" />
-      <project id="toxicity-parent" values="Properties,JavaScript,Images,JAVA,CSS,JSON Schema,XML,Groovy,PLAIN_TEXT,Git file,ARCHIVE,Markdown,HTML" collectionTime="1471853699227" />
-      <project id="sbt-findbugs" values="SBT,Scala,Markdown,JAVA,ARCHIVE,Properties,YAML,PLAIN_TEXT,Git file,XML" collectionTime="1469051022006" />
+      <project id="trains" values="SBT,PLAIN_TEXT,Properties,JAVA,Git file,Markdown" collectionTime="1461514264363" />
+      <project id="sbt-verify" values="Images,HTML,CSS,UNKNOWN,XML,YAML,JavaScript,Git file,ARCHIVE,Markdown,PLAIN_TEXT,Properties,SBT,JAVA,CLASS,Scala" collectionTime="1469210616691" />
+      <project id="sbt-findbugs" values="SBT,JAVA,Git file,ARCHIVE,Markdown,YAML,Scala,XML,Properties,PLAIN_TEXT" collectionTime="1469051022006" />
+      <project id="toxicity-parent" values="Properties,JavaScript,XML,Images,CSS,JAVA,Git file,ARCHIVE,Markdown,JSON Schema,PLAIN_TEXT,Groovy,HTML" collectionTime="1473327638350" />
+      <project id="toxicity" values="ARCHIVE,JAVA,Markdown,XML,Groovy,PLAIN_TEXT,Properties" collectionTime="1469387335852" />
     </group>
     <group name="images.ide.background">
-      <project id="toxicity-parent" values="editor=0,frame=0" collectionTime="1471853699232" />
+      <project id="toxicity-parent" values="editor=0,frame=0" collectionTime="1473327638420" />
     </group>
     <group name="Git">
-      <project id="trains" values="data.local.branches.count.1,config.push.autoupdate.disabled,config.force.push.enabled,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,config.update.type.BRANCH_DEFAULT,config.ssh.enabled,config.warn.about.detached.enabled,data.remotes.in.project.0,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,data.remote.branches.count.0,config.save.policy.STASH" collectionTime="1461514264411" />
-      <project id="sbt-verify" values="config.force.push.enabled,config.save.policy.STASH,config.push.update.all.roots.enabled,config.ssh.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.push.autoupdate.disabled,config.update.type.BRANCH_DEFAULT,data.local.branches.count.2+,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,data.remote.branches.count.1,data.remotes.in.project.1" collectionTime="1469210616724" />
-      <project id="toxicity" values="config.push.autoupdate.disabled,config.force.push.enabled,config.save.policy.STASH,config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.ssh.enabled,config.cherry-pick.autocommit.disabled,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled" collectionTime="1469387335862" />
-      <project id="toxicity-parent" values="config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,config.push.autoupdate.disabled,config.force.push.enabled,config.repo.sync.NOT_DECIDED,config.ssh.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.crlf.enabled,config.warn.about.detached.enabled,config.push.update.all.roots.enabled" collectionTime="1471853699233" />
-      <project id="sbt-findbugs" values="config.push.autoupdate.disabled,data.remote.branches.count.8+,config.warn.about.detached.enabled,config.cherry-pick.autocommit.disabled,config.save.policy.STASH,data.local.branches.count.8+,config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED,data.remotes.in.project.2+,config.ssh.enabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled" collectionTime="1469051022009" />
+      <project id="trains" values="config.warn.about.detached.enabled,config.save.policy.STASH,data.remote.branches.count.0,data.remotes.in.project.0,data.local.branches.count.1,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.push.update.all.roots.enabled,config.ssh.enabled,config.push.autoupdate.disabled,config.update.type.BRANCH_DEFAULT,config.force.push.enabled,config.warn.about.crlf.enabled" collectionTime="1461514264411" />
+      <project id="sbt-verify" values="config.force.push.enabled,config.save.policy.STASH,data.remotes.in.project.1,config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,data.remote.branches.count.1,config.ssh.enabled,data.local.branches.count.2+,config.push.autoupdate.disabled" collectionTime="1469210616724" />
+      <project id="sbt-findbugs" values="data.local.branches.count.8+,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,config.force.push.enabled,config.push.update.all.roots.enabled,data.remotes.in.project.2+,config.warn.about.crlf.enabled,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.ssh.enabled,data.remote.branches.count.8+" collectionTime="1469051022009" />
+      <project id="toxicity-parent" values="data.local.branches.count.1,data.remotes.in.project.1,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled,config.ssh.enabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,data.remote.branches.count.0,config.warn.about.crlf.enabled,config.save.policy.STASH,config.warn.about.detached.enabled" collectionTime="1473327638424" />
+      <project id="toxicity" values="config.ssh.enabled,config.save.policy.STASH,config.warn.about.crlf.enabled,config.push.autoupdate.disabled,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.warn.about.detached.enabled,config.update.type.BRANCH_DEFAULT,config.force.push.enabled,config.push.update.all.roots.enabled" collectionTime="1469387335862" />
     </group>
     <group name="libraries">
-      <project id="toxicity-parent" values="groovy" collectionTime="1471853699232" />
+      <project id="toxicity-parent" values="groovy" collectionTime="1473327638413" />
       <project id="sbt-verify" values="Scala" collectionTime="1469210616707" />
       <project id="trains" values="Scala" collectionTime="1461514264385" />
       <project id="sbt-findbugs" values="Scala" collectionTime="1469051022007" />
@@ -49,9 +53,9 @@
     <group name="language-level">
       <project id="trains" values="JDK_1_8" collectionTime="1461514264406" />
       <project id="sbt-verify" values="JDK_1_8" collectionTime="1469210616718" />
-      <project id="toxicity" values="JDK_1_8" collectionTime="1469387335860" />
-      <project id="toxicity-parent" values="JDK_1_8" collectionTime="1471853699232" />
       <project id="sbt-findbugs" values="JDK_1_8" collectionTime="1469051022008" />
+      <project id="toxicity-parent" values="JDK_1_8" collectionTime="1473327638422" />
+      <project id="toxicity" values="JDK_1_8" collectionTime="1469387335860" />
     </group>
   </component>
   <component name="UsageTrigger">
@@ -66,7 +70,7 @@
       <entry feature="ide.settings.Keymap" count="1" />
       <entry feature="ide.settings.Plugins" count="3" />
       <entry feature="ide.settings.SBT" count="5" />
-      <entry feature="ideaapp.started" count="20" />
+      <entry feature="ideaapp.started" count="22" />
       <entry feature="scala.file.script.parsed" count="40323" />
       <entry feature="scala.file.with.type.aware.annotated" count="625" />
       <entry feature="scala.rename.member" count="4" />

@@ -1,13 +1,13 @@
 <application>
   <component name="PropertiesComponent">
-    <property name="installed.kotlin.plugin.version" value="1.0.2-1-release-IJ145-20" />
+    <property name="installed.kotlin.plugin.version" value="1.0.3-release-IJ2016.1-120" />
     <property name="installation.uid" value="8b3100fa-ae7f-494f-a38e-98c4d39a24c5" />
-    <property name="android-component-compatibility-check" value="1469817623185" />
+    <property name="android-component-compatibility-check" value="1472864509207" />
     <property name="PLUGIN_FILTER" value="javascript&#10;Ma&#10;builder&#10;rea&#10;kot" />
     <property name="settings.code.style.selected.tab.JAVA" value="Wrapping and Braces" />
     <property name="file.chooser.recent.files" value="/Users/Joseph&#10;/Users/Joseph/Workspace/toxicity/gradle-toxicity/src/main&#10;/Users/Joseph/Workspace/toxicity/gradle-toxicity/src&#10;/Users/Joseph/Workspace/toxicity&#10;/Users/Joseph/Workspace/sbt-findbugs&#10;/Users/Joseph/Workspace/sbt-verify&#10;/Library/Java/JavaVirtualMachines/jdk1.7.0_67.jdk/Contents/Home&#10;/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home&#10;/Users/Joseph/Workspace/trains&#10;/Users/Joseph/Desktop" />
     <property name="toolwindow.stripes.buttons.info.shown" value="true" />
-    <property name="lastTip" value="15" />
+    <property name="lastTip" value="17" />
     <property name="BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR" value="true" />
     <property name="BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
     <property name="BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="true" />
