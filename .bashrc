@@ -43,21 +43,26 @@ eval "$(thefuck --alias)"
 # hn-cli
 alias hn='/usr/local/bin/hn --keep-open'
 
-# rbenv
-export RBENV_DIR="$HOME/.rbenv"
-eval "$(rbenv init -)"
-
-# pyenv
-export PYENV_DIR="$HOME/.pyenv"
-eval "$(pyenv init -)"
+# jenv
+export JENV_DIR="$HOME/.jenv"
+eval "$(jenv init -)"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
-# jenv
-export JENV_DIR="$HOME/.jenv"
-eval "$(jenv init -)"
+# phpenv
+export PHPENV_DIR="$HOME/.phpenv"
+export PATH="$PATH:$PHPENV_DIR/bin"
+eval "$(phpenv init -)"
+
+# pyenv
+export PYENV_DIR="$HOME/.pyenv"
+eval "$(pyenv init -)"
+
+# rbenv
+export RBENV_DIR="$HOME/.rbenv"
+eval "$(rbenv init -)"
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
