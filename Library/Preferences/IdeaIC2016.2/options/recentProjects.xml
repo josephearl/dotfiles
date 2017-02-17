@@ -2,9 +2,10 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
-        <option value="$USER_HOME$/Workspace/toxicity" />
         <option value="$USER_HOME$/Workspace/sbt-verify" />
         <option value="$USER_HOME$/Workspace/sbt-findbugs" />
+        <option value="$USER_HOME$/Workspace/toxicity" />
+        <option value="$USER_HOME$/Workspace/react-java" />
         <option value="$USER_HOME$/Workspace/trains" />
       </list>
     </option>
@@ -13,28 +14,39 @@
         <option value="$USER_HOME$/Workspace/toxicity" />
       </list>
     </option>
-    <option name="lastPath" value="$USER_HOME$/Workspace/toxicity" />
+    <option name="lastPath" value="$USER_HOME$/Workspace/sbt-verify" />
     <option name="additionalInfo">
       <map>
+        <entry key="$USER_HOME$/Workspace/react-java">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IC-162.1812.17" />
+              <option name="productionCode" value="IC" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1477450849030" />
+              <option name="buildTimestamp" value="1472511600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Workspace/sbt-findbugs">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="IC-145.597" />
+              <option name="build" value="IC-162.1812.17" />
               <option name="productionCode" value="IC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1469049958550" />
-              <option name="buildTimestamp" value="1459206000000" />
+              <option name="projectOpenTimestamp" value="1482536036690" />
+              <option name="buildTimestamp" value="1472511600000" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
         <entry key="$USER_HOME$/Workspace/sbt-verify">
           <value>
             <RecentProjectMetaInfo>
-              <option name="build" value="IC-145.597" />
+              <option name="build" value="IC-162.1812.17" />
               <option name="productionCode" value="IC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1469060156718" />
-              <option name="buildTimestamp" value="1459206000000" />
+              <option name="projectOpenTimestamp" value="1483036945948" />
+              <option name="buildTimestamp" value="1472511600000" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -44,7 +56,7 @@
               <option name="build" value="IC-162.1812.17" />
               <option name="productionCode" value="IC" />
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
-              <option name="projectOpenTimestamp" value="1472982534009" />
+              <option name="projectOpenTimestamp" value="1482465642446" />
               <option name="buildTimestamp" value="1472511600000" />
             </RecentProjectMetaInfo>
           </value>

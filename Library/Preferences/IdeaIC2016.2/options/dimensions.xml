@@ -29,6 +29,15 @@
     <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1680.1050" x="304" y="198" />
     <location key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog.0.0.1680.1050" x="587" y="358" />
     <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="558" y="364" />
+    <location key="#Web_Browsers.0.0.1680.1050" x="625" y="381" />
+    <location key="WELCOME_SCREEN.0.0.1280.800" x="639" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1280.800" x="558" y="364" />
+    <location key="#com.intellij.refactoring.rename.AutomaticRenamingDialog.0.0.1280.800" x="195" y="23" />
+    <location key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1280.800" x="354" y="169" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1280.800" x="378" y="165" />
+    <location key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog.0.0.1280.800" x="378" y="173" />
+    <location key="SettingsEditor.0.0.1280.800" x="138" y="74" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1280.800" x="422" y="123" />
     <size key="SettingsEditor.0.0.1680.1050" width="1549" height="850" />
     <size key="NewModule_or_Project.wizard.0.0.1680.1050" width="977" height="646" />
     <size key="GridCell.Tab.0.left.0.0.1680.1050" width="1680" height="306" />

@@ -1,16 +1,6 @@
 <application>
   <component name="FindRecents">
     <findStrings>
-      <find>toxicity</find>
-      <find>metrics</find>
-      <find>Objects</find>
-      <find>thresholdMe</find>
-      <find>total</find>
-      <find>copy</find>
-      <find>lineS</find>
-      <find>scores</find>
-      <find>name</find>
-      <find>score</find>
       <find>colors</find>
       <find>shuffle</find>
       <find>close</find>
@@ -31,6 +21,16 @@
       <find>convention</find>
       <find>path</find>
       <find>rtab</find>
+      <find>ViewComponentAdapter</find>
+      <find>emptyList</find>
+      <find>prit</find>
+      <find>pri</find>
+      <find>priori</find>
+      <find>implicit</find>
+      <find>xslt</find>
+      <find>XSLT</find>
+      <find>applyXSLT</find>
+      <find>None</find>
     </findStrings>
     <replaceStrings>
       <replace>sbt-verify</replace>
