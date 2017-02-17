@@ -35,7 +35,7 @@ source $HOME/.bash_completion
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main dotfiles
 dotfiles config status.showUntrackedFiles no
-dotfiles config alias.install '!bash $HOME/.osx/install.bash'
+dotfiles config alias.install '!bash $HOME/.dotfiles_install/install.bash'
 
 # thefuck
 eval "$(thefuck --alias)"
