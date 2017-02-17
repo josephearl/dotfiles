@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+set -e
 
-# TODO: same in install.bash, come up with folder structure?
+# NPM - installed by Homebrew
 
 # https://github.com/rafaelrinaldi/hn-cli
 npm install -g @rafaelrinaldi/hn-cli

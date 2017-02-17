@@ -28,7 +28,7 @@ set PATH '/usr/local/sbin' $PATH
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 complete --command dotfiles --wraps git
 dotfiles config status.showUntrackedFiles no
-dotfiles config alias.install '!bash $HOME/.osx/install.bash'
+dotfiles config alias.install '!bash $HOME/.dotfiles_install/install.bash'
 
 # thefuck
 eval (thefuck --alias | tr '\n' ';')
