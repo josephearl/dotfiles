@@ -35,7 +35,7 @@ source $HOME/.bash_completion
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main dotfiles
 dotfiles config status.showUntrackedFiles no
-dotfiles config alias.install '!bash $HOME/.osx/install.bash'
+dotfiles config alias.install '!bash $HOME/.dotfiles_install/install.bash'
 
 # thefuck
 eval "$(thefuck --alias)"
@@ -43,26 +43,21 @@ eval "$(thefuck --alias)"
 # hn-cli
 alias hn='/usr/local/bin/hn --keep-open'
 
-# jenv
-export JENV_DIR="$HOME/.jenv"
-eval "$(jenv init -)"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
-
-# phpenv
-export PHPENV_DIR="$HOME/.phpenv"
-export PATH="$PATH:$PHPENV_DIR/bin"
-eval "$(phpenv init -)"
+# rbenv
+export RBENV_DIR="$HOME/.rbenv"
+eval "$(rbenv init -)"
 
 # pyenv
 export PYENV_DIR="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
-# rbenv
-export RBENV_DIR="$HOME/.rbenv"
-eval "$(rbenv init -)"
+# nvm
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
+# jenv
+export JENV_DIR="$HOME/.jenv"
+eval "$(jenv init -)"
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"

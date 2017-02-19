@@ -207,7 +207,7 @@
 	<key>WindowTitle</key>
 	<string></string>
 	<key>name</key>
-	<string>monokai</string>
+	<string>Monokai</string>
 	<key>noWarnProcesses</key>
 	<array>
 		<dict>
