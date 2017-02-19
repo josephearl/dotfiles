@@ -16,5 +16,5 @@ command_exists "git"
 command_exists "brew"
 
 for dir in "${HOME}"/.install/*/; do
-  . "${dir}install.bash"
+  "${dir}install.bash"
 done

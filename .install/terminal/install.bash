@@ -2,7 +2,7 @@
 set -e
 
 # Set Monokai as the default theme
-DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 osascript <<EOD
 
 tell application "Terminal"
