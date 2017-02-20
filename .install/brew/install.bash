@@ -6,4 +6,5 @@ set -e
 brew update
 brew doctor
 # Install everything in the Brewfile
-brew bundle
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+(cd "$DIR" && brew bundle)

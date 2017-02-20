@@ -15,6 +15,6 @@ command_exists "git"
 # Homebrew must be installed
 command_exists "brew"
 
-for dir in "${HOME}"/.dotfiles_install/*/; do
+for dir in "${HOME}"/.install/*/; do
   . "${dir}install.bash"
 done
