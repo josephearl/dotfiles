@@ -49,6 +49,6 @@ bass . (brew --prefix nvm)/nvm.sh --no-use
 # jenv
 set -xU JENV_DIR "$HOME/.jenv"
 
-# SDKMan!
+# SDKMAN!
 set -xU SDKMAN_DIR "$HOME/.sdkman"
 test -s "SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init
