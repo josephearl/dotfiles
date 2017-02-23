@@ -8,8 +8,8 @@
 
 To replicate this configuration on a new machine initialise and fetch the repository:
 
-    git init --bare .dotfiles
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+    git init --bare "$HOME/.dotfiles"
+    alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
     dotfiles remote add origin https://github.com/JosephEarl/dotfiles
     dotfiles fetch
 
@@ -50,8 +50,8 @@ Backing up Homebrew packages and casks:
 
 Create your own basic dotfiles setup as follows:
 
-    git init --bare .dotfiles
-    alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+    git init --bare "$HOME/.dotfiles"
+    alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
     dotfiles config status.showUntrackedFiles no
 
 You can use any other path instead of `$HOME/.dotfiles` to store the Git configuration for your dotfiles.
