@@ -11,7 +11,7 @@ command_exists() {
 command_exists "brew"
 command_exists "git"
 xcode_tools_installed() {
-  xcode-select -p 2>/dev/null || {
+  xcode-select -p > /dev/null 2>&1 || {
     echo -e "\e[31mXcode command line tools not installed!\e[39m"
     exit 2
   }
