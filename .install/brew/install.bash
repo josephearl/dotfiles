@@ -13,9 +13,10 @@ command_exists() {
   }
 }
 command_exists "git"
-# Source bashrc to get the brew command alias
-. "${HOME}/.bashrc"
 command_exists "brew"
+# Source bashrc to get the brew command alias
+shopt -s expand_aliases
+. "${HOME}/.bashrc"
 # Make sure Homebrew is up to date and OK
 brew update
 brew doctor
