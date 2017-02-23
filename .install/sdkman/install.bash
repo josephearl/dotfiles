@@ -6,10 +6,13 @@ err_report() {
 trap 'err_report $LINENO' ERR
 
 # SDKMAN!
-# Source bashrc to get the nvm command
+# Source bashrc to get the sdk command
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${HOME}/.bashrc"
 hash "sdk" 2>/dev/null || {
   curl -s "https://get.sdkman.io" | bash
+  rm -rf "${SDKMAN_DIR}/etc/config"
+  ln -s "${DIR}/config" "${SDKMAN_DIR}/etc/config"
   . "${HOME}/.bashrc"
 }
 
