@@ -2,9 +2,9 @@
 
 [@josephearl](https://twitter.com/josephearl)’s dotfiles.
 
-## Getting started
+## Using dotfiles
 
-**Requirements: Git and Homebrew already installed.**
+**Pre-requisites:** Homebrew, Git, Xcode command line tools
 
 To replicate this configuration on a new machine initialise and fetch the repository:
 
@@ -13,7 +13,7 @@ To replicate this configuration on a new machine initialise and fetch the reposi
     dotfiles remote add origin https://github.com/JosephEarl/dotfiles
     dotfiles fetch
 
-Remove any existing conflicting files:
+Backup and remove any existing conflicting files:
 
     rm .bashrc
     ...
@@ -30,7 +30,7 @@ Install the software and OS X settings:
 
     dotfiles install
 
-## Modifying dotfiles
+## Updating dotfiles
 
 To add a new dotfile:
 
@@ -41,14 +41,14 @@ To commit and push changes:
     dotfiles commit -m <message>
     dotfiles push origin master
 
-### Backing up Homebrew packages and casks
+Backing up Homebrew packages and casks:
 
     brew leaves
     brew cask list
 
 ## Creating your own dotfiles
 
-To create your own dotfiles repo like this:
+Create your own basic dotfiles setup as follows:
 
     git init --bare .dotfiles
     alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
