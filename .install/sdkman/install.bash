@@ -13,6 +13,7 @@ hash "sdk" 2>/dev/null || {
   . "${HOME}/.bashrc"
 }
 
+sdk install java
 # http://groovy-lang.org
 sdk install groovy
 # http://www.scala-lang.org
