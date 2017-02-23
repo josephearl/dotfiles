@@ -1,9 +1,17 @@
 #!/usr/bin/env bash
 set -e
+err_report() {
+  echo -e "\e[31mError on line $1 in file $0\e[39m"
+}
+trap 'err_report $LINENO' ERR
 
 # SDKMAN!
-curl -s "https://get.sdkman.io" | bash
-. $HOME/.bashrc
+# Source bashrc to get the nvm command
+. "${HOME}/.bashrc"
+hash "sdk" 2>/dev/null || {
+  curl -s "https://get.sdkman.io" | bash
+  . "${HOME}/.bashrc"
+}
 
 # http://groovy-lang.org
 sdk install groovy

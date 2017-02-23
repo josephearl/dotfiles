@@ -32,10 +32,15 @@ export PATH="/usr/local/sbin:$PATH"
 source $HOME/.bash_completion
 
 # Dotfiles
-alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+function dotfiles {
+  if [[ $@ == "install" ]]; then
+    command bash "$HOME/.install/install.bash"
+  else
+    command git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" "$@"
+  fi
+}
 complete -o bashdefault -o default -o nospace -F __git_wrap__git_main dotfiles
 dotfiles config status.showUntrackedFiles no
-dotfiles config alias.install '!bash $HOME/.install/install.bash'
 
 # thefuck
 eval "$(thefuck --alias)"
@@ -62,3 +67,8 @@ eval "$(jenv init -)"
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+# Homebrew
+brew_path=${PATH//$PYENV_DIR\/shims:/}
+brew_path=${brew_path//$RBENV_DIR\/shims:/}
+alias brew="PATH=\"${brew_path}\" brew"

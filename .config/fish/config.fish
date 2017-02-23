@@ -25,10 +25,8 @@ set PATH '/usr/local/bin' $PATH
 set PATH '/usr/local/sbin' $PATH
 
 # Dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 complete --command dotfiles --wraps git
 dotfiles config status.showUntrackedFiles no
-dotfiles config alias.install '!bash $HOME/.install/install.bash'
 
 # thefuck
 eval (thefuck --alias | tr '\n' ';')
@@ -51,6 +49,6 @@ bass . (brew --prefix nvm)/nvm.sh --no-use
 # jenv
 set -xU JENV_DIR "$HOME/.jenv"
 
-# SDKMan!
+# SDKMAN!
 set -xU SDKMAN_DIR "$HOME/.sdkman"
 test -s "SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init

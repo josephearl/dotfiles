@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 set -e
+err_report() {
+  echo -e "\e[31mError on line $1 in file $0\e[39m"
+}
+trap 'err_report $LINENO' ERR
 
 # Set Monokai as the default theme
-DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 osascript <<EOD
 
 tell application "Terminal"

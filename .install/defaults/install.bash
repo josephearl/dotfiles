@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 set -e
+err_report() {
+  echo -e "\e[31mError on line $1 in file $0\e[39m"
+}
+trap 'err_report $LINENO' ERR
 
 # Adapted from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
@@ -242,7 +246,7 @@ defaults write com.apple.mail DraftsViewerAttributes -dict-add "SortOrder" -stri
 # Hide Spotlight tray-icon (and subsequent helper)
 sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 # Load new settings before rebuilding the index
-killall mds > /dev/null 2>&1
+killall mds > /dev/null 2>&1 || true
 # Make sure indexing is enabled for the main volume
 sudo mdutil -i on / > /dev/null
 # Rebuild the index from scratch
