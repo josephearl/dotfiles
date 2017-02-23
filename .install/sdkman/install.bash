@@ -10,9 +10,12 @@ trap 'err_report $LINENO' ERR
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${HOME}/.bashrc"
 hash "sdk" 2>/dev/null || {
+  tmp_dir="$(mktemp -d)"
+  cp "${SDKMAN_DIR}/etc/"* "${tmp_dir}/"
+  rm -rf "${SDKMAN_DIR}"
   curl -s "https://get.sdkman.io" | bash
-  rm -rf "${SDKMAN_DIR}/etc/config"
-  ln -s "${DIR}/config" "${SDKMAN_DIR}/etc/config"
+  cp "${tmp_dir}/"* "${SDKMAN_DIR}/etc/"
+  rm -rf "${tmp_dir}"
   . "${HOME}/.bashrc"
 }
 
