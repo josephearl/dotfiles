@@ -5,15 +5,6 @@ err_report() {
 }
 trap 'err_report $LINENO' ERR
 
-# Homebrew taps and casks
-command_exists() {
-  hash "$1" 2>/dev/null || { 
-    echo -e "\e[31m$1 not installed!\e[39m"
-    exit 1
-  }
-}
-command_exists "git"
-command_exists "brew"
 # Source bashrc to get the brew command alias
 shopt -s expand_aliases
 . "${HOME}/.bashrc"
