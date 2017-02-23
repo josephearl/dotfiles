@@ -26,7 +26,7 @@ Load the latest settings:
 
     source .bashrc
 
-Install the software and OS X settings:
+Install the software and macOS settings:
 
     dotfiles install
 
