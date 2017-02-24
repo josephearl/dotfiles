@@ -270,3 +270,7 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+# Set user profile picture
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+sudo dscl . create "${HOME}" Picture "${DIR}/8831_Portrait_Geek_Square.png"
