@@ -66,7 +66,7 @@ eval "$(jenv init -)"
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
 
 # Homebrew
 brew_path=${PATH//$PYENV_DIR\/shims:/}
