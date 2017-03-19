@@ -24,6 +24,7 @@ brew 'wget'
 brew 'git'
 brew 'git-lfs'
 brew 'gibo'
+brew 'hugo'
 brew 'imagemagick', args: ['with-webp']
 brew 'lynx'
 brew 'lcov'
