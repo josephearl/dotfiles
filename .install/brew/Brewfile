@@ -46,6 +46,7 @@ brew 'php56', args: ['with-gmp']
 brew 'pyenv'
 # https://github.com/rbenv/rbenv
 brew 'rbenv'
+brew 'direnv'
 brew 'ruby-build'
 brew 'sqlite'
 

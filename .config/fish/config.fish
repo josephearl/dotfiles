@@ -24,7 +24,7 @@ set fish_pager_color_secondary F8F8F2 # the background color of the every second
 set PATH '/usr/local/bin' $PATH
 set PATH '/usr/local/sbin' $PATH
 
-# Dotfiles
+# dotfiles
 complete --command dotfiles --wraps git
 dotfiles config status.showUntrackedFiles no
 
@@ -44,7 +44,22 @@ status --is-interactive; and . (pyenv init -|psub)
 
 # nvm
 set -xU NVM_DIR "$HOME/.nvm"
-bass . (brew --prefix nvm)/nvm.sh --no-use
+bass . (brew --prefix nvm)/nvm.sh
+function __check_nvm --on-variable PWD --description 'Use nvm version specified in .nvmrc'
+  if test -f .nvmrc
+    set node_version (nvm version)
+    set nvmrc_node_version (nvm version (cat .nvmrc))
+
+    if [ $nvmrc_node_version = "N/A" ]
+      nvm install
+    else if [ $nvmrc_node_version != $node_version ]
+      nvm use
+    end
+  end
+end
+
+# To check current dir upon Fish session start
+__check_nvm
 
 # jenv
 set -xU JENV_DIR "$HOME/.jenv"
@@ -52,3 +67,6 @@ set -xU JENV_DIR "$HOME/.jenv"
 # SDKMAN!
 set -xU SDKMAN_DIR "$HOME/.sdkman"
 test -s "SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init
+
+# direnv
+eval (direnv hook fish)

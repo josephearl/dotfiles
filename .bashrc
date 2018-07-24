@@ -31,7 +31,7 @@ export PATH="/usr/local/sbin:$PATH"
 # Completion
 source $HOME/.bash_completion
 
-# Dotfiles
+# dotfiles
 function dotfiles {
   if [[ $@ == "install" ]]; then
     command bash "$HOME/.install/install.bash"
@@ -67,6 +67,9 @@ eval "$(jenv init -)"
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
+
+# direnv
+eval "$(direnv hook bash)"
 
 # Homebrew
 brew_path=${PATH//$PYENV_DIR\/shims:/}
