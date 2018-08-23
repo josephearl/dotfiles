@@ -66,7 +66,7 @@ set -xU JENV_DIR "$HOME/.jenv"
 
 # SDKMAN!
 set -xU SDKMAN_DIR "$HOME/.sdkman"
-test -s "SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init
+test -s "$SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init
 
 # direnv
 eval (direnv hook fish)
