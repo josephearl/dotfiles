@@ -35,7 +35,6 @@ brew 'michaeldfallen/formula/git-radar'
 brew 'cocoapods'
 # https://github.com/crsmithdev/goenv
 brew 'goenv'
-brew 'jenv'
 brew 'mysql'
 # https://github.com/creationix/nvm
 brew 'nvm'

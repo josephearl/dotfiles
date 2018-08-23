@@ -60,10 +60,6 @@ eval "$(pyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 
-# jenv
-export JENV_DIR="$HOME/.jenv"
-eval "$(jenv init -)"
-
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" || true

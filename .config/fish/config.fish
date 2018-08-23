@@ -61,9 +61,6 @@ end
 # To check current dir upon Fish session start
 __check_nvm
 
-# jenv
-set -xU JENV_DIR "$HOME/.jenv"
-
 # SDKMAN!
 set -xU SDKMAN_DIR "$HOME/.sdkman"
 test -s "$SDKMAN_DIR/bin/sdkman-init.sh"; and sdkman-init
