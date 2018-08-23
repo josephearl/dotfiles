@@ -2,6 +2,7 @@
 function sdk --description 'Software Development Kit Manager'
   set after_env (mktemp -t env)
   set path_env (mktemp -t env)
+  set sdk_env (mktemp -t env)
 
   bash -c "source ~/.sdkman/bin/sdkman-init.sh && sdk $argv && printenv > $after_env"
 
@@ -23,7 +24,7 @@ function sdk --description 'Software Development Kit Manager'
         for elem in (echo $env_value | tr ':' '\n')
           switch $elem
             case '*/.sdkman/*'
-              echo "$elem" >> $path_env
+              echo "$elem" >> $sdk_env
           end
         end
       case '*'
@@ -33,8 +34,10 @@ function sdk --description 'Software Development Kit Manager'
         end
     end
   end
-  set -gx PATH (cat $path_env) ^ /dev/null
+
+  set -gx PATH (cat $sdk_env $path_env) ^ /dev/null
 
   rm -f $after_env
   rm -f $path_env
+  rm -f $sdk_env
 end
