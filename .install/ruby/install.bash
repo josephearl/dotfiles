@@ -12,7 +12,9 @@ command_exists() {
     exit 1
   }
 }
-mkdir -p "$HOME/.rbenv"
+# Source bashrc to get the rbenv shell command working
+. "${HOME}/.bashrc"
+mkdir -p "$RBENV_DIR"
 command_exists "rbenv"
 # Ruby
 ruby_version="2.7.1"
@@ -20,8 +22,6 @@ rbenv_install() {
   rbenv versions | grep "$1" 2>/dev/null || rbenv install "$1"
 }
 rbenv_install "${ruby_version}"
-# Source bashrc to get the rbenv shell command working
-. "${HOME}/.bashrc"
 rbenv global "${ruby_version}"
 rbenv shell "${ruby_version}"
 

@@ -12,7 +12,9 @@ command_exists() {
     exit 1
   }
 }
-mkdir -p "$HOME/.pyenv"
+# Source bashrc to get the pyenv shell command working
+. "${HOME}/.bashrc"
+mkdir -p "$PYENV_DIR"
 command_exists "pyenv"
 # Python 2 and 3
 python2_version="2.7.18"
