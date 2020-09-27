@@ -6,7 +6,13 @@ err_report() {
 trap 'err_report $LINENO' ERR
 
 # Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+test -s "$ZSH/oh-my-zsh.sh" || {
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  # Fix directory permissions for completions
+  compaudit | xargs chmod g-w,o-w
+}
 
-# Fix directory permissions for completions
-compaudit | xargs chmod g-w,o-w
+# Install https://github.com/zsh-users/zsh-syntax-highlighting
+test -d "$ZSH/custom/plugins/zsh-syntax-highlighting" || {
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH/custom/plugins/zsh-syntax-highlighting
+}
