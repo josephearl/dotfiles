@@ -5,7 +5,13 @@ err_report() {
 }
 trap 'err_report $LINENO' ERR
 
-# SDKMAN!
+# SDKMAN! - installed by Homebrew
+command_exists() {
+  hash "$1" 2>/dev/null || {
+    echo -e "\e[31mPre-requisite $1 not installed\e[39m"
+    exit 1
+  }
+}
 # Source bashrc to get the sdk command
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 . "${HOME}/.bashrc"
@@ -17,5 +23,5 @@ hash "sdk" 2>/dev/null || {
   cp "${tmp_dir}/"* "${SDKMAN_DIR}/etc/"
   rm -rf "${tmp_dir}"
 }
-source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+command_exists "sdk"
 sdk install java

@@ -5,7 +5,7 @@ err_report() {
 }
 trap 'err_report $LINENO' ERR
 
-# rbenv - install by Homebrew
+# rbenv - installed by Homebrew
 command_exists() {
   hash "$1" 2>/dev/null || { 
     echo -e "\e[31mPre-requisite $1 not installed\e[39m"
@@ -20,7 +20,8 @@ rbenv_install() {
   rbenv versions | grep "$1" 2>/dev/null || rbenv install "$1"
 }
 rbenv_install "${ruby_version}"
-eval "$(rbenv init -)"
+# Source bashrc to get the rbenv shell command working
+. "${HOME}/.bashrc"
 rbenv global "${ruby_version}"
 rbenv shell "${ruby_version}"
 

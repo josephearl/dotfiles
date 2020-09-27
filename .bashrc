@@ -48,20 +48,20 @@ hash "thefuck" 2>/dev/null && {
 }
 
 # rbenv
+export RBENV_DIR="$HOME/.rbenv"
 hash "rbenv" 2>/dev/null && {
-  export RBENV_DIR="$HOME/.rbenv"
   eval "$(rbenv init -)"
 }
 
 # pyenv
+export PYENV_DIR="$HOME/.pyenv"
 hash "pyenv" 2>/dev/null && {
-  export PYENV_DIR="$HOME/.pyenv"
   eval "$(pyenv init -)"
 }
 
 # nvm
+export NVM_DIR="$HOME/.nvm"
 test -s "$(brew --prefix nvm)/nvm.sh" && {
-  export NVM_DIR="$HOME/.nvm"
   . "$(brew --prefix nvm)/nvm.sh"
 }
 
@@ -72,7 +72,7 @@ test -s "$SDKMAN_DIR/bin/sdkman-init.sh" && {
 }
 
 # direnv
-hash "pyenv" 2>/dev/null && {
+hash "direnv" 2>/dev/null && {
   eval "$(direnv hook bash)"
 }
 
