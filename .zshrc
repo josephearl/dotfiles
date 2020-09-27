@@ -71,7 +71,6 @@ test -s "$ZSH/oh-my-zsh.sh" && {
     node
     nvm
     npm
-    npx
     pyenv
     python
     rbenv
