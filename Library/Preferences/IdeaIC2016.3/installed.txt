@@ -1,6 +1,0 @@
-Lombook Plugin
-com.idea.plugin.builder
-mobi.hsz.idea.gitignore
-org.intellij.plugins.markdown
-org.intellij.scala
-org.jetbrains.kotlin
