@@ -16,12 +16,12 @@ command_exists() {
 . "${HOME}/.bashrc"
 command_exists "nvm"
 # Node
-node_version="14.12.0"
+node_version="--lts"
 nvm_install() {
   nvm ls "$1" | grep "$1" 2>/dev/null || nvm install "$1"
 }
 nvm_install "${node_version}"
-nvm alias default "${node_version}"
+nvm alias default "lts/*"
 nvm use "${node_version}"
 
 # NPM
