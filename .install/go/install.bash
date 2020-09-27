@@ -14,7 +14,7 @@ command_exists() {
 }
 command_exists "goenv"
 # go
-go_version="1.7.4"
+go_version="1.15.2"
 goenv_install() {
   goenv versions | grep "$1" 2>/dev/null || goenv install "$1"
 }

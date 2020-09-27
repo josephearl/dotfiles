@@ -14,8 +14,8 @@ command_exists() {
 }
 command_exists "pyenv"
 # Python 2 and 3
-python2_version="2.7.13"
-python3_version="3.6.0"
+python2_version="2.7.18"
+python3_version="3.8.5"
 pyenv_install() {
   pyenv versions | grep "$1" 2>/dev/null || pyenv install "$1"
 }

@@ -14,7 +14,7 @@ command_exists() {
 }
 command_exists "rbenv"
 # Ruby
-ruby_version="2.4.0"
+ruby_version="2.7.1"
 rbenv_install() {
   rbenv versions | grep "$1" 2>/dev/null || rbenv install "$1"
 }
