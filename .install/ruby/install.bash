@@ -12,6 +12,7 @@ command_exists() {
     exit 1
   }
 }
+mkdir -p "$HOME/.rbenv"
 command_exists "rbenv"
 # Ruby
 ruby_version="2.7.1"
@@ -23,7 +24,7 @@ rbenv global "${ruby_version}"
 
 # RubyGems
 command_exists "gem"
-# Update system version
-gem update --system
+# Update
+gem update
 # http://bundler.io
 gem install bundler

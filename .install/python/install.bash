@@ -12,6 +12,7 @@ command_exists() {
     exit 1
   }
 }
+mkdir -p "$HOME/.pyenv"
 command_exists "pyenv"
 # Python 2 and 3
 python2_version="2.7.18"

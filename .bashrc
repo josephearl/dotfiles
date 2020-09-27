@@ -45,9 +45,6 @@ dotfiles config status.showUntrackedFiles no
 # thefuck
 eval "$(thefuck --alias)"
 
-# hn-cli
-alias hn='/usr/local/bin/hn --keep-open'
-
 # rbenv
 export RBENV_DIR="$HOME/.rbenv"
 eval "$(rbenv init -)"

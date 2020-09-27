@@ -17,7 +17,8 @@ brew 'openssl'
 brew 'thefuck'
 brew 'michaeldfallen/formula/git-radar'
 # https://github.com/crsmithdev/goenv
-brew 'goenv'
+# HEAD arg is required because of https://github.com/syndbg/goenv/issues/80
+brew 'goenv', args: ['HEAD']
 # https://github.com/creationix/nvm
 brew 'nvm'
 # https://github.com/yyuu/pyenv
