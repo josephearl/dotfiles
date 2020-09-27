@@ -18,7 +18,7 @@ command_exists "nvm"
 # Node
 node_version="--lts"
 nvm_install() {
-  nvm ls "$1" | grep "$1" 2>/dev/null || nvm install "$1"
+  nvm install "$1"
 }
 nvm_install "${node_version}"
 nvm alias default "lts/*"
