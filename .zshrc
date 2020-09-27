@@ -62,7 +62,6 @@ alias brew="PATH=\"${brew_path}\" brew"
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {
-  # zsh-syntax-highlighting must be the last plugin
   plugins=(
     bundler
     docker
@@ -81,8 +80,8 @@ test -s "$ZSH/oh-my-zsh.sh" && {
     vscode
     xcode
     zsh-autosuggestions
-    zsh-history-substring-search
     zsh-syntax-highlighting
+    zsh-history-substring-search
   )
 
   source "$ZSH/oh-my-zsh.sh"
