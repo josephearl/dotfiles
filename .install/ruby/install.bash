@@ -20,7 +20,9 @@ rbenv_install() {
   rbenv versions | grep "$1" 2>/dev/null || rbenv install "$1"
 }
 rbenv_install "${ruby_version}"
+eval "$(rbenv init -)"
 rbenv global "${ruby_version}"
+rbenv shell "${ruby_version}"
 
 # RubyGems
 command_exists "gem"

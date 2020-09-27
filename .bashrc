@@ -43,26 +43,38 @@ complete -o bashdefault -o default -o nospace -F __git_wrap__git_main dotfiles
 dotfiles config status.showUntrackedFiles no
 
 # thefuck
-eval "$(thefuck --alias)"
+hash "thefuck" 2>/dev/null && {
+  eval "$(thefuck --alias)"
+}
 
 # rbenv
-export RBENV_DIR="$HOME/.rbenv"
-eval "$(rbenv init -)"
+hash "rbenv" 2>/dev/null && {
+  export RBENV_DIR="$HOME/.rbenv"
+  eval "$(rbenv init -)"
+}
 
 # pyenv
-export PYENV_DIR="$HOME/.pyenv"
-eval "$(pyenv init -)"
+hash "pyenv" 2>/dev/null && {
+  export PYENV_DIR="$HOME/.pyenv"
+  eval "$(pyenv init -)"
+}
 
 # nvm
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+test -s "$(brew --prefix nvm)/nvm.sh" && {
+  export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"
+}
 
 # SDKMAN!
 export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" || true
+test -s "$SDKMAN_DIR/bin/sdkman-init.sh" && {
+  source "$SDKMAN_DIR/bin/sdkman-init.sh"
+}
 
 # direnv
-eval "$(direnv hook bash)"
+hash "pyenv" 2>/dev/null && {
+  eval "$(direnv hook bash)"
+}
 
 # Homebrew
 brew_path=${PATH//$PYENV_DIR\/shims:/}

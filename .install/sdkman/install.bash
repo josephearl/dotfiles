@@ -16,7 +16,6 @@ hash "sdk" 2>/dev/null || {
   curl -s "https://get.sdkman.io" | bash
   cp "${tmp_dir}/"* "${SDKMAN_DIR}/etc/"
   rm -rf "${tmp_dir}"
-  . "${HOME}/.bashrc"
 }
-
+source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 sdk install java
