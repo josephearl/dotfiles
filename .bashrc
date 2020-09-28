@@ -47,16 +47,22 @@ hash "thefuck" 2>/dev/null && {
   eval "$(thefuck --alias)"
 }
 
+# goenv
+export GOENV_DIR="$HOME/.goenv"
+hash "goenv" 2>/dev/null && {
+  eval "$(goenv init - --no-rehash)"
+}
+
 # rbenv
 export RBENV_DIR="$HOME/.rbenv"
 hash "rbenv" 2>/dev/null && {
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - --no-rehash)"
 }
 
 # pyenv
 export PYENV_DIR="$HOME/.pyenv"
 hash "pyenv" 2>/dev/null && {
-  eval "$(pyenv init -)"
+  eval "$(pyenv init - --no-rehash)"
 }
 
 # nvm
