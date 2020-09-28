@@ -47,34 +47,17 @@ hash "thefuck" 2>/dev/null && {
   eval "$(thefuck --alias)"
 }
 
-# goenv
-export GOENV_DIR="$HOME/.goenv"
-hash "goenv" 2>/dev/null && {
-  eval "$(goenv init - --no-rehash)"
-}
-
-# rbenv
-export RBENV_DIR="$HOME/.rbenv"
-hash "rbenv" 2>/dev/null && {
-  eval "$(rbenv init - --no-rehash)"
-}
-
-# pyenv
-export PYENV_DIR="$HOME/.pyenv"
-hash "pyenv" 2>/dev/null && {
-  eval "$(pyenv init - --no-rehash)"
-}
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-test -s "$(brew --prefix nvm)/nvm.sh" && {
-  . "$(brew --prefix nvm)/nvm.sh"
-}
-
-# SDKMAN!
-export SDKMAN_DIR="$HOME/.sdkman"
-test -s "$SDKMAN_DIR/bin/sdkman-init.sh" && {
-  source "$SDKMAN_DIR/bin/sdkman-init.sh"
+# asdf
+export ASDF_DATA_DIR="$HOME/.asdf" 
+hash "asdf" 2>/dev/null && {
+  export ASDF_DIR="$(brew --prefix asdf)"
+  source "$ASDF_DIR/asdf.sh"
+  test -s "$ASDF_DATA_DIR/plugins/dotnet/set-dotnet-home.sh" && {
+    source "$ASDF_DATA_DIR/plugins/dotnet/set-dotnet-home.sh"
+  }
+  test -s "$ASDF_DATA_DIR/plugins/java/set-java-home.sh" && {
+    source "$ASDF_DATA_DIR/plugins/java/set-java-home.sh"
+  }
 }
 
 # direnv

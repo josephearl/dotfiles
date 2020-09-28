@@ -9,6 +9,7 @@ brew 'coreutils'
 brew 'findutils'
 brew 'ack'
 brew 'jq'
+brew 'direnv' 
 brew 'tree'
 brew 'unrar'
 brew 'git'
@@ -17,19 +18,8 @@ brew 'imagemagick'
 brew 'openssl'
 brew 'thefuck'
 brew 'michaeldfallen/formula/git-radar'
-# https://github.com/crsmithdev/goenv
-# HEAD arg is required because of https://github.com/syndbg/goenv/issues/80
-brew 'goenv', args: ['HEAD']
-# https://github.com/creationix/nvm
-brew 'nvm'
-# https://github.com/yyuu/pyenv
-brew 'pyenv'
-# https://github.com/rbenv/rbenv
-brew 'rbenv'
-brew 'direnv'
 
 cask 'docker'
-cask 'dotnet-sdk'
 cask 'transmission'
 cask 'transmit'
 cask 'visual-studio-code'
