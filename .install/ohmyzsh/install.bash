@@ -8,6 +8,10 @@ trap 'err_report $LINENO' ERR
 # Install Oh My Zsh
 test -s "$ZSH/oh-my-zsh.sh" || {
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+  # Put back our .zshrc
+  mv "$HOME/.zshrc.pre-oh-my-zsh" "$HOME/.zshrc"
+
   # Fix directory permissions for completions
   compaudit | xargs chmod g-w,o-w
 }
