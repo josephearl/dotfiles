@@ -18,12 +18,21 @@ xcode_tools_installed() {
 }
 xcode_tools_installed
 
-# Execute all install scripts
-for dir in "${HOME}"/.install/*/; do
-  echo -e "\e[36mRunning $(basename ${dir}) install script\e[39m"
-  "${dir}install.bash" || {
-    echo -e "\e[31mRunning $(basename ${dir}) install script failed!\e[39m"
+install() {
+  echo -e "\e[36mRunning $(basename $1) install script\e[39m"
+  "${1}/install.bash" || {
+    echo -e "\e[31mRunning $(basename $1) install script failed!\e[39m"
     exit $?
   }
-  echo -e "\e[32mRunning $(basename ${dir}) install script complete!\e[39m"
+  echo -e "\e[32mRunning $(basename $1) install script complete!\e[39m"
+}
+
+# Install Homebrew first
+install "$HOME/.install/brew"
+
+# Execute all other install scripts
+for dir in "$HOME"/.install/*; do
+  if [[ "$(basename $dir)" != "brew" ]]; then
+    install "$dir"
+  fi
 done
