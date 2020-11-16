@@ -53,6 +53,7 @@ alias brew="PATH=\"${brew_path}\" brew"
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {
   plugins=(
+    thefuck
     bundler
     docker
     dotnet
