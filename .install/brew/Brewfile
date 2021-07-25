@@ -1,7 +1,5 @@
 cask_args appdir: '/Applications'
 
-tap 'michaeldfallen/formula'
-
 brew 'asdf'
 brew 'bash'
 brew 'gnu-sed'
@@ -12,7 +10,7 @@ brew 'ack'
 brew 'jq'
 brew 'direnv'
 brew 'tree'
-brew 'unrar'
+brew 'carlocab/personal/unrar'
 brew 'gpg'
 brew 'git-lfs'
 brew 'imagemagick'

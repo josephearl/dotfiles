@@ -27,7 +27,8 @@ hash "thefuck" 2>/dev/null && {
 }
 
 # asdf
-export ASDF_DATA_DIR="$HOME/.asdf" 
+export ASDF_DATA_DIR="$HOME/.asdf"
+export ASDF_GROOVY_DISABLE_JAVA_HOME_EXPORT=true
 hash "asdf" 2>/dev/null && {
   export ASDF_DIR="$(brew --prefix asdf)"
   source "$ASDF_DIR/asdf.sh"

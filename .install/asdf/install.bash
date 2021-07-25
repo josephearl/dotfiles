@@ -23,6 +23,9 @@ test -d "$ASDF_DATA_DIR/plugins/golang" || {
 test -d "$ASDF_DATA_DIR/plugins/java" || {
   asdf plugin add java
 }
+test -d "$ASDF_DATA_DIR/plugins/groovy" || {
+  asdf plugin-add groovy https://github.com/weibemoura/asdf-groovy.git
+}
 test -d "$ASDF_DATA_DIR/plugins/nodejs" || {
   asdf plugin add nodejs
 }
