@@ -52,8 +52,7 @@ hash "thefuck" 2>/dev/null && {
 # asdf
 export ASDF_DATA_DIR="$HOME/.asdf" 
 hash "asdf" 2>/dev/null && {
-  export ASDF_DIR="$(brew --prefix asdf)"
-  source "$ASDF_DIR/asdf.sh"
+  source "$(brew --prefix asdf)/libexec/asdf.sh"
   test -s "$ASDF_DATA_DIR/plugins/dotnet/set-dotnet-home.sh" && {
     source "$ASDF_DATA_DIR/plugins/dotnet/set-dotnet-home.sh"
   }
