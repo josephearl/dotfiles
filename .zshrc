@@ -4,7 +4,7 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 
 # Prompt
 hash "git-radar" 2>/dev/null && {
-  export PS1=$'%B%F{green}→%B%F %B%F{cyan}$(basename \$(pwd))/%B%F\$(git-radar --zsh --fetch) '
+  export PS1=$'%B%F{green}→%B%F %B%F{cyan}$(basename "\$(pwd)")/%B%F\$(git-radar --zsh --fetch) '
 }
 
 # Include local bin
