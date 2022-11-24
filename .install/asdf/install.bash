@@ -36,22 +36,22 @@ test -d "$ASDF_DATA_DIR/plugins/ruby" || {
   asdf plugin add ruby
 }
 
-asdf install dotnet-core 3.1.402
-asdf global dotnet-core 3.1.402
+asdf install dotnet-core 3.1.425
+asdf global dotnet-core 3.1.425
 
-asdf install golang 1.15.2
-asdf global golang 1.15.2
+asdf install golang 1.19.3
+asdf global golang 1.19.3
 
-asdf install java adoptopenjdk-11.0.8+10
-asdf global java adoptopenjdk-11.0.8+10
+asdf install java temurin-17.0.5+8
+asdf global java temurin-17.0.5+8
 
 bash -c '$ASDF_DATA_DIR/plugins/nodejs/bin/import-release-team-keyring'
-asdf install nodejs 12.18.4
-asdf global nodejs 12.18.4
+asdf install nodejs 18.12.1
+asdf global nodejs 18.12.1
 
-asdf install python 3.8.6
+asdf install python 3.11.0
 asdf install python 2.7.18
-asdf global python 3.8.6 2.7.18
+asdf global python 3.11.0 2.7.18
 
-asdf install ruby 2.7.1
-asdf global ruby 2.7.1
+asdf install ruby 3.1.2
+asdf global ruby 3.1.2
