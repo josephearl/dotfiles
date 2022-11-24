@@ -45,7 +45,6 @@ asdf global golang 1.19.3
 asdf install java temurin-17.0.5+8
 asdf global java temurin-17.0.5+8
 
-bash -c '$ASDF_DATA_DIR/plugins/nodejs/bin/import-release-team-keyring'
 asdf install nodejs 18.12.1
 asdf global nodejs 18.12.1
 
