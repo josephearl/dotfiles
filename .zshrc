@@ -44,11 +44,6 @@ hash "direnv" 2>/dev/null && {
   eval "$(direnv hook zsh)"
 }
 
-# Homebrew
-brew_path=${PATH//$PYENV_DIR\/shims:/}
-brew_path=${brew_path//$RBENV_DIR\/shims:/}
-alias brew="PATH=\"${brew_path}\" brew"
-
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {

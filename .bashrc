@@ -65,8 +65,3 @@ hash "asdf" 2>/dev/null && {
 hash "direnv" 2>/dev/null && {
   eval "$(direnv hook bash)"
 }
-
-# Homebrew
-brew_path=${PATH//$PYENV_DIR\/shims:/}
-brew_path=${brew_path//$RBENV_DIR\/shims:/}
-alias brew="PATH=\"${brew_path}\" brew"
