@@ -44,6 +44,9 @@ hash "direnv" 2>/dev/null && {
   eval "$(direnv hook zsh)"
 }
 
+# podman
+alias docker=podman
+
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {

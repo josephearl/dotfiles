@@ -65,3 +65,6 @@ hash "asdf" 2>/dev/null && {
 hash "direnv" 2>/dev/null && {
   eval "$(direnv hook bash)"
 }
+
+# podman
+alias docker=podman
