@@ -17,6 +17,7 @@ brew 'imagemagick'
 brew 'openssl'
 brew 'thefuck'
 brew 'michaeldfallen/formula/git-radar'
+brew 'podman'
 
 cask 'docker'
 cask 'transmission'
