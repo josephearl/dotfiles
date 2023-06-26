@@ -19,7 +19,6 @@ brew 'thefuck'
 brew 'michaeldfallen/formula/git-radar'
 brew 'podman'
 
-cask 'docker'
 cask 'transmission'
 cask 'transmit'
 cask 'visual-studio-code'
