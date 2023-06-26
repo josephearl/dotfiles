@@ -1,3 +1,6 @@
+# Path
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Terminal Colors
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
