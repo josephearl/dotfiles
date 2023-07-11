@@ -11,7 +11,7 @@ To replicate this configuration on a new machine initialise and fetch the reposi
     brew install git
     git init --bare "$HOME/.dotfiles"
     alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
-    dotfiles remote add origin https://github.com/josephearl/dotfiles
+    dotfiles remote add origin git@github.com:josephearl/dotfiles.git
     dotfiles fetch
 
 Backup and remove any existing conflicting files:
