@@ -1,6 +1,6 @@
 # dotfiles
 
-[@josephearl](https://twitter.com/josephearl)’s dotfiles.
+[@josephearl](https://github.com/josephearl)’s dotfiles.
 
 ## Using dotfiles
 
