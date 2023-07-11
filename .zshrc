@@ -49,11 +49,13 @@ hash "direnv" 2>/dev/null && {
 
 # podman
 alias docker=podman
+alias docker-compose=podman-compose
 
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {
   plugins=(
+    asdf
     thefuck
     bundler
     docker
@@ -61,11 +63,8 @@ test -s "$ZSH/oh-my-zsh.sh" && {
     git
     golang
     node
-    nvm
     npm
-    pyenv
     python
-    rbenv
     ruby
     vscode
     xcode

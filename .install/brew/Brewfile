@@ -18,6 +18,7 @@ brew 'openssl'
 brew 'thefuck'
 brew 'michaeldfallen/formula/git-radar'
 brew 'podman'
+brew 'podman-compose'
 
 cask 'transmission'
 cask 'transmit'

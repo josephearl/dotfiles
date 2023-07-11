@@ -68,3 +68,4 @@ hash "direnv" 2>/dev/null && {
 
 # podman
 alias docker=podman
+alias docker-compose=podman-compose
