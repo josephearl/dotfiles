@@ -51,6 +51,9 @@ hash "direnv" 2>/dev/null && {
 alias docker=podman
 alias docker-compose=podman-compose
 
+# Visual Studio Code
+alias code="open -b com.microsoft.VSCode"
+
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh" 
 test -s "$ZSH/oh-my-zsh.sh" && {
