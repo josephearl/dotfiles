@@ -3,6 +3,7 @@
 	name = Joseph Earl
 [push]
 	default = simple
+	autoSetupRemote = true
 [alias]
 	co = checkout
 	st = status
@@ -13,9 +14,10 @@
 	ls = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate
 	ll = log --pretty=format:\"%C(green bold)%h%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --numstat
 	ld = log --pretty=format:\"%C(green bold)%h\\ %C(yellow bold)%ad%C(red bold)%d\\ %Creset%s%C(cyan bold)\\ [%cn]\" --decorate --date=relative
+	ds = diff --staged
 	unstage = reset HEAD --
 	discard = checkout --
-	last = log -1 HEAD
+	last = show HEAD
 [color]
 	ui = auto
 [color "branch"]

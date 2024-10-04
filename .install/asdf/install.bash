@@ -35,5 +35,8 @@ test -d "$ASDF_DATA_DIR/plugins/python" || {
 test -d "$ASDF_DATA_DIR/plugins/ruby" || {
   asdf plugin add ruby
 }
+test -d "$ASDF_DATA_DIR/plugins/shellcheck" || {
+  asdf plugin add shellcheck
+}
 
 (cd "$HOME"; asdf install)

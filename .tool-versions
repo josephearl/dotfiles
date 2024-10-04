@@ -1,6 +1,6 @@
-dotnet-core 8.0.101
-golang 1.21.6
-java temurin-21.0.2+13.0.LTS
-nodejs 20.11.0
-ruby 3.2.3
-python 3.12.1 2.7.18
+dotnet-core 8.0.402
+golang 1.23.2
+java temurin-21.0.4+7.0.LTS
+nodejs 20.17.0
+ruby 3.3.5
+python 3.12.7 2.7.18
